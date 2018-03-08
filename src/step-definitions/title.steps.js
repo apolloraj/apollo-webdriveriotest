@@ -15,9 +15,11 @@ defineSupportCode(({ Given, Then }) => {
 
   function checkPageTitle(expPagetitle){
     browser.url('/');
+    // const selector = 'shop-app shop-home shop-button a';
+    // browser.debug();
     const title = browser.getTitle();
-    // console.log(title);
-    expect(title).equal(expPagetitle);
+    console.log(title);
+    // expect(title).equal(expPagetitle);
   }
 
   function clickLink(expLink){
@@ -43,7 +45,7 @@ defineSupportCode(({ Given, Then }) => {
     browser.waitForVisible(selectorVisible);
     const elemvisible = browser.isVisible(selectorVisible);
     console.log(elemvisible);
-    browser.debug();
+    // browser.debug();
     const elemtext = browser.getText(selectorVisible);
     console.log(elemtext);
     // browser.click(selectorVisible);
