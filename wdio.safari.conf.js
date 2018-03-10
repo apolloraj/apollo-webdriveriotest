@@ -46,7 +46,8 @@ exports.config = {
         maxInstances: 1,
         //
         // browserName: 'chrome'
-        browserName: 'internet explorer'
+        // browserName: 'internet explorer'
+        browserName: 'safari'
         // browserName: 'MicrosoftEdge'
         // browserName: 'firefox'
     }],

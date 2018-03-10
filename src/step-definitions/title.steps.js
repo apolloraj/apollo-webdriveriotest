@@ -15,11 +15,19 @@ defineSupportCode(({ Given, Then }) => {
 
   function checkPageTitle(expPagetitle){
     browser.url('/');
+    // browser.url('https://shop.polymer-project.org/');
     // const selector = 'shop-app shop-home shop-button a';
+    browser.debug();
     // browser.debug();
+    // test
+    // const selector = 'shop-app shop-home shop-button a';
+    // browser.waitForVisible(selector);
+    // browser.click(selector);
+    // test line
     const title = browser.getTitle();
-    console.log(title);
-    // expect(title).equal(expPagetitle);
+    console.log(title);    
+    expect(title).equal(expPagetitle);
+    // expect(title).contains(expPagetitle);
   }
 
   function clickLink(expLink){

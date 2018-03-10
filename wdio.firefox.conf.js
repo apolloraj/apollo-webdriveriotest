@@ -46,9 +46,14 @@ exports.config = {
         maxInstances: 1,
         //
         // browserName: 'chrome'
-        browserName: 'internet explorer'
+        // browserName: 'internet explorer'
         // browserName: 'MicrosoftEdge'
-        // browserName: 'firefox'
+        browserName: 'firefox',
+        pageLoadStrategy: 'eager'
+        // version: "",
+        // platform: "ANY",
+        // javascriptEnabled: true,
+        // marionette: false,
     }],
     //
     // ===================
@@ -115,15 +120,12 @@ exports.config = {
     plugins: {
       'wdio-webcomponents': {}
     },
-    // port: '5555',
-    // path: '/',
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: ['selenium-standalone','iedriver'],
-    // services: ['selenium-standalone'],
+    services: ['selenium-standalone'],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: http://webdriver.io/guide/testrunner/frameworks.html
@@ -135,7 +137,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    // reporters: ['allure'],
+    reporters: ['allure'],
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
@@ -151,7 +153,7 @@ exports.config = {
         profile: [],        // <string[]> (name) specify the profile to use
         strict: false,      // <boolean> fail if there are any undefined or pending steps
         tags: [],           // <string[]> (expression) only execute the features or scenarios with tags matching the expression
-        timeout: 200000,     // <number> timeout for step definitions
+        timeout: 99999999,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
 

@@ -46,9 +46,15 @@ exports.config = {
         maxInstances: 1,
         //
         // browserName: 'chrome'
-        browserName: 'internet explorer'
+        // browserName: 'internet explorer'
         // browserName: 'MicrosoftEdge'
-        // browserName: 'firefox'
+        browserName: 'firefox',
+        // version: "",
+        // platform: "ANY",
+        // javascriptEnabled: true,
+        // marionette: false,
+    },{
+        browserName: 'chrome'
     }],
     //
     // ===================
@@ -148,7 +154,7 @@ exports.config = {
         profile: [],        // <string[]> (name) specify the profile to use
         strict: false,      // <boolean> fail if there are any undefined or pending steps
         tags: [],           // <string[]> (expression) only execute the features or scenarios with tags matching the expression
-        timeout: 20000,     // <number> timeout for step definitions
+        timeout: 99999999,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
 
