@@ -14,8 +14,8 @@ defineSupportCode(({ Given, Then }) => {
 
 
   function checkPageTitle(expPagetitle){
-    browser.url('/');
-    // browser.url('https://shop.polymer-project.org/');
+    // browser.url('/');
+    browser.url('https://shop.polymer-project.org/');
     // const selector = 'shop-app shop-home shop-button a';
     browser.debug();
     // browser.debug();
