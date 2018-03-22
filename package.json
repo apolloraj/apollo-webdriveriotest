@@ -16,9 +16,11 @@
     "protractor-cucumber": "^0.1.8",
     "protractor-cucumber-framework": "^4.2.0",
     "wdio-allure-reporter": "^0.3.2",
-    "wdio-appium-service": "^0.2.3",
     "wdio-cucumber-framework": "^1.1.0",
     "wdio-webcomponents": "^1.1.0",
     "webdriverio": "^4.10.2"
+  },
+  "dependencies": {
+    "wdio-selenium-standalone-service": "0.0.10"
   }
 }
